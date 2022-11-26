@@ -4,58 +4,59 @@ body {
 	padding: 0;
 	margin: 0;
 	background: #fff;
-    font-weight: 700;
+	font-weight: 700;
 }
 
 /*--- navigation bar ---*/
 
-.navbar {
+.navbar {}
 
-}
-.p-color{
-	
+.p-color {}
+
+.navbar-toggler {
+	width: 47px;
+	height: 34px;
+	background-color: #fff;
+	border: none;
 }
 
-.navbar-toggler{
-    width: 47px;
-    height: 34px;
-    background-color: #fff;
-    border: none;
+.navbar-toggler .line {
+	border: 1px solid #028090;
+	width: 100%;
+	float: left;
+	height: 2px;
+	background-color: #fff;
+	margin-top: 3px;
+	margin-bottom: 5px;
 }
-.navbar-toggler .line{
-    border: 1px solid #028090;
-    width: 100%;
-    float: left;
-    height: 2px;
-    background-color: #fff;
-    margin-top: 3px;
-    margin-bottom: 5px;
+
+.navbar-toggler::after {
+	border: none;
 }
-.navbar-toggler::after{
-    border: none;
-}
-.navbar-toggler:hover{
-    border: none;
+
+.navbar-toggler:hover {
+	border: none;
 }
 
 .nav-link {
-    color: #000;
-    font-size: 110%;
-    font-weight: 700;
-    cursor: pointer;
+	color: #000;
+	font-size: 110%;
+	font-weight: 700;
+	cursor: pointer;
 }
 
 .navbar-brand {
-    color: #F6AE2D;
-    font-size: 140%;
-    font-weight: 700;
-    cursor: pointer;
+	color: #F6AE2D;
+	font-size: 140%;
+	font-weight: 700;
+	cursor: pointer;
 }
+
 .navbar-brand:hover {
-    color: #028090;
-    font-size: 140%;
-    font-weight: 700;
-    cursor: pointer;
+	color: #028090;
+	font-size: 140%;
+	font-weight: 700;
+	cursor: pointer;
 }
 
 
@@ -64,7 +65,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #F6AE2D;
+	color: #F6AE2D;
 }
 
 .navbar-collapse {
@@ -73,12 +74,12 @@ body {
 
 
 .overlay {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.4);
 }
 
 .description {
@@ -88,9 +89,11 @@ body {
 	transform: translate(-50%, -55%);
 	text-align: center;
 }
+
 .text-white h1 {
 	color: black;
 }
+
 .description p {
 	color: #fff;
 	font-size: 1.3rem;
@@ -98,15 +101,16 @@ body {
 }
 
 .description button {
-    
-    background:#000;
-    border-radius: 0;
-    color:#fff;
+
+	background: #000;
+	border-radius: 0;
+	color: #fff;
 }
+
 .description button:hover {
-	border:1px solid #028090;
-    background:#114B5F;
-    color:#000;
+	border: 1px solid #028090;
+	background: #114B5F;
+	color: #000;
 }
 
 /*--- feature section ---*/
@@ -151,6 +155,13 @@ body {
 
 /*--- job cars ---*/
 
+.worker-title{
+	text-align: center;
+	padding: 15px;
+	font-weight: 400;
+	color: #fff;
+}
+
 .box {
 	color: #fff;
 	position: relative;
@@ -160,47 +171,52 @@ body {
 	transition: 0.5s;
 	transform-style: preserve-3d;
 	overflow: hidden;
-	margin-right: 15px;
+	margin-right: 30px;
 	margin-top: 45px;
-  }
-  
-  .container .box:hover {
+}
+
+.container .box:hover {
 	transform: rotateY(0deg) scale(1.25);
 	z-index: 1;
-	box-shadow: 0 25px 40px rgba(0,0,0,0.5);
-  }
-  .container .box .imgBx {
+	box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+}
+
+.container .box .imgBx {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-  }
-  .container .box .imgBx:before {
+}
+
+.container .box .imgBx:before {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(180deg,#028090,#000);
+	background: linear-gradient(180deg, #028090, #000);
 	z-index: 1;
 	opacity: 0;
 	transition: 0.5s;
 	mix-blend-mode: multiply;
-  }
-  .container .box:hover .imgBx:before {
+}
+
+.container .box:hover .imgBx:before {
 	opacity: 1;
-  }
-  .container .box .imgBx img {
+}
+
+.container .box .imgBx img {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-  }
-  .container .box .content {
+}
+
+.container .box .content {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -211,8 +227,9 @@ body {
 	padding: 20px;
 	align-items: flex-end;
 	box-sizing: border-box;
-  }
-  .container .box .content h2 {
+}
+
+.container .box .content h2 {
 	color: #fff;
 	transition: 0.5s;
 	text-transform: uppercase;
@@ -220,26 +237,29 @@ body {
 	font-size: 20px;
 	transform: translateY(200px);
 	transition-delay: 0.3s;
-  }
-  .container .box:hover .content h2 {
+}
+
+.container .box:hover .content h2 {
 	transform: translateY(0px);
-  }
-  .container .box .content p {
+}
+
+.container .box .content p {
 	color: #fff;
 	transition: 0.5s;
 	font-size: 14px;
 	transform: translateY(200px);
 	transition-delay: 0.4s;
-  }
-  .container .box:hover .content p {
+}
+
+.container .box:hover .content p {
 	transform: translateY(0px);
-  }
+}
 
 
 /*--- team section ---*/
 
 .background {
-	background: #114B5F;
+	background: #999;
 	padding: 4em 0;
 }
 
@@ -255,7 +275,7 @@ body {
 }
 
 .team .card {
-	background:none;
+	background: none;
 	border: none;
 }
 
@@ -290,27 +310,27 @@ body {
 }
 
 #demo-modal h4 {
-    color: #000;
-    font-size: 30px;
-    margin: 0 0 25px;
-    font-weight: bold;
-    text-transform: capitalize;
+	color: #000;
+	font-size: 30px;
+	margin: 0 0 25px;
+	font-weight: bold;
+	text-transform: capitalize;
 }
 
 #demo-modal .close {
 	background: #c0c3c8;
-    border-radius: 50%;
+	border-radius: 50%;
 	color: #fff;
-    font-size: 19px;
+	font-size: 19px;
 	font-weight: normal;
-    height: 30px;
-    opacity: 0.5;
-    padding: 0;
-    position: absolute;
-    right: 26px;
-    text-align: center;
-    top: 26px;
-    width: 30px;
+	height: 30px;
+	opacity: 0.5;
+	padding: 0;
+	position: absolute;
+	right: 26px;
+	text-align: center;
+	top: 26px;
+	width: 30px;
 }
 
 #demo-modal .close span {
@@ -346,9 +366,49 @@ body {
 
 	.team {
 		padding: 0 15px;
+
 	}
-	
+
+	.box {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 15px;
+		
+	}
+
 }
+@media (max-width: 1200px) {
+
+	.team {
+		padding: 0 15px;
+
+	}
+
+	.box {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 15px;
+		margin-right: 30px;
+		
+	}
+
+}
+
+@media (max-width: 400px) {
+
+	.team {
+		padding: 15px 15px 15px 70px;
+	}
+
+	.box {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+
+}
+
+
 
 @media (max-width: 575.98px) {
 
@@ -360,23 +420,23 @@ body {
 		transform: none;
 		text-align: center;
 	}
-	
+
 	.description h1 {
 		font-size: 2em;
 	}
-	
+
 	.description p {
 		font-size: 1.2rem;
 	}
-	
+
 	.features {
 		margin: 0;
 	}
-	
+
 	.team {
 		max-width: 60%;
 	}
-	
+
 	#demo-modal .btn {
 		min-width: auto;
 	}
