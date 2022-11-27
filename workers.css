@@ -46,7 +46,7 @@ body {
 }
 
 .navbar-brand {
-	color: #B20D30;
+	color: #F6AE2D;
 	font-size: 140%;
 	font-weight: 700;
 	cursor: pointer;
@@ -58,6 +58,8 @@ body {
 	font-weight: 700;
 	cursor: pointer;
 }
+
+
 
 a{
 	color: white;
@@ -72,7 +74,7 @@ a:hover {
 }
 
 .nav-link:hover {
-	color: #B20D30;
+	color: #F6AE2D;
 }
 
 .navbar-collapse {
@@ -266,7 +268,7 @@ a:hover {
 /*--- team section ---*/
 
 .background {
-	background: #666;
+	background: #999;
 	padding: 4em 0;
 }
 
@@ -295,13 +297,13 @@ a:hover {
 /*--- footer ---*/
 
 .page-footer {
-	background-color: #000;
+	background-color: #222;
 	color: #ccc;
 	padding: 60px 0 30px;
 }
 
 .footer-copyright {
-	color: #fff;
+	color: #666;
 	padding: 40px 0;
 }
 
